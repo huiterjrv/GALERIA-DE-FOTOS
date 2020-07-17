@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box; /*esto te puede ayudar para que todo el contenido quede dentro de su padre*/
+    /* ha hora quitando el borde trasparente lo encontraras pero escalara la imagen*/
+}
+
+body {
+    margin: 0;
+}
+
+.espacio {
+    height: 5em;
+}
+
+#contenedor {
+    background-color: #6f9d9d;
+    width: 70%;
+    margin: auto;
+    border: #105555 2px solid;
+    border-radius: 1em;
+    text-align: center;
+}
+
+#galeria {
+    width: 90%;
+    min-height: 13em; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+#galeria div {
+    width: 12em;
+    height: 12em;
+    border-radius: 1em;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.3em;
+    cursor: zoom-in;
+}
+
+#galeria div img {
+    width: 2em;
+    height: 2em;
+    margin: 0.5em;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#galeria div img:hover {
+    opacity: 1;
+}
+
+#galeria div img:active {
+    cursor: wait;
+}
+
+#fototeca {
+    width: 90%;
+    min-height: 8em; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+#fototeca div {
+    width: 5.5em;
+    height: 5.5em;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#fototeca div:hover {
+    opacity: 1;
+}
+
+#fototeca div:active {
+    cursor: grabbing;
+}
+
+/*---------bentana modular--------*/
+
+#lightbox {
+    background-color: #000000e0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+img#anterior {
+    width: 10%;
+    cursor: pointer;
+}
+
+img#imagen_lightbox {
+    width: 40%;
+    height: 50%;
+    margin-top: 3em;
+}
+
+img#siguiente {
+    transform: rotate(180deg);
+    width: 10%;
+    cursor: pointer;
+}
+
+.espera {
+    cursor: wait;
+}
+
+.desaparicion {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: desaparicion;
+}
+
+@keyframes desaparicion {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.aparicion {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: aparicion;
+}
+
+@keyframes aparicion {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

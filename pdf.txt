@@ -1,0 +1,35 @@
+Actividad 3: Creación dinámica de una galería de fotos
+Seguir los pasos que se detallan a continuación para la creación de una galería de fotos de forma
+dinámica
+Paso 1: Creación de la fototeca para la selección de fotos a incorporar a la galería
+ Crear un array con la totalidad de las fotos
+ Al entrar en la página se mostrarán todas las fotos del array
+Paso 2: Añadir fotos de la fototeca en la galería
+Al hacer doble clic en una foto de la fototeca esta se añadirá a la galería siguiendo las siguientes
+especificaciones:
+ Crearemos un array vacío al cargar la página
+ Antes de añadir la foto al array validaremos que no se haya añadido con anterioridad
+ Mostrar las fotos del array de la galería en la parte superior de la página
+Paso 3: Almacenar la galería de fotos en el local storage
+ Cada vez que guardamos una foto en la galería guardaremos el array en el local storage
+ Al cargar la página informaremos el array de la galería con el contenido del local storage si
+hay
+Paso 4: Permitir borrar fotos de la galería
+ Incluir en la imagen de las fotos de la galería una cruz roja en la esquina superior derecha
+ Al pulsar sobre esta cruz, borraremos la foto de la galería y del array
+ Actualizaremos el local storage con el nuevo contenido del array una vez borrada la foto
+Paso 5: Ampliación de la foto de la galería sobre la que hemos hecho click
+ Al hacer clic sobre una foto de la galería se mostrará esta ampliada dentro de una ventana
+tipo lightbox
+ La ventana se mostrará con un efecto del tipo 'fade' con una duración de 1s
+ La foto saldrá centrada verticalmente y horitzontament
+ Con un fondo semitransparente
+Paso 6: Cierre del lightbox
+ Al pulsar sobre la imagen ampliada o sobre el lightbox cerraremos este con una transición
+del tipo 'fadeout' de 1s
+Paso 7: Navegar por las imágenes de la galería al lightbox
+ Incorporar dos imágenes del tipo flecha para poder seleccionar la foto anterior y siguiente
+de la galería dentro del ligthbox
+ En pulsar anterior 'mostraremos la foto anterior. Si es la primera mostraremos la última
+ En pulsar 'siguiente' mostraremos la foto siguiente. Si se la última mostraremos la primera
+CRITERIOS EVALUACIÓN
